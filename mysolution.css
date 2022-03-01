@@ -9,7 +9,7 @@
 
 /* Esercizio 2 */
 .ex-2-square{
-    transition: width 4s;
+    transition: width 4s ease;
 }
 
 .ex-2-square:active{
@@ -49,4 +49,62 @@
     height: 40px;
 }
 
+/* Esercizio 6 */
+.ex-6-img{
+    transition: filter 3s ease;
+}
 
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+/* Esercizio 7 */
+.ex-7-img{
+    transition: filter 3s ease-out;
+    transition: filter 5s ease-out;
+}
+
+.ex-7-img:hover{
+    filter: invert(100%);
+    filter: sepia(80%);;
+}
+
+/* Esercizio 8 */
+.ex-8-img{
+    transition: filter 3s, border-radius 3s ease;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(20%) saturate(60%);
+    border-radius: 20%;
+}
+
+/* Esercizio 9 */
+.ex-9-img{
+    transition: filter 3s, border-radius 3s, width 3s, margin 3s ease;
+}
+
+.ex-9-img:hover{
+    filter: hue-rotate(180deg) saturate(50%);
+    border-radius: 5%;
+    width: 500px;
+    margin: 0;
+}
+
+/* Esercizio 10 */
+.ex-10-icon{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+/* Esercizio 11 */
